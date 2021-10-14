@@ -46,3 +46,9 @@
         url('../fonts/OpenSans-Bold.woff') format('woff');
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('OpenSans-Bold'),
+  url('../fonts/Poppins-Regular.ttf') format('truetype');
+}

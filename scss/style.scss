@@ -2,7 +2,7 @@
 @import 'fonts';
 @import 'reset';
 @import 'libs';
-@import 'global';
+@import 'global'; 
 
 .header{
   background-image: url(../images/header-bg.jpg);
@@ -581,29 +581,63 @@
 }
 
 .footer{
-  background-color: #3F1456;
+  background-color: #151515;
+  padding: 70px 75px;
+
   &__inner{
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
   }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 27px;
+  }
+
+  &__heading {
+    color: #fff;
+    margin-bottom: 27px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  &__links {
+    &-list {
+      font-family: 'Poppins', sans-serif;
+
+      &-item {
+        margin-bottom: 10px;
+
+        a {
+          color: #A2A2A2;
+        }
+      }
+    }
+  }
+
   &__wrapper{
     display: flex;
     flex-direction: column;
   }
+
   &__wrapper-link{
-    color: #fff;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #A2A2A2;
     font-size: 18px;
-    line-height: 25px;
   }
+
   &__text{
     color: #fff;
-    max-width: 330px;
-    font-weight: 700;
-    span{
-      font-size: 22px;
-    }
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 100;
+    line-height: 22px;
+    font-size: 14px;
   }
   &__social{
     color: #fff;
