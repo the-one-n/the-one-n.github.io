@@ -5,19 +5,18 @@
 @import 'global';
 
 .header{
-  background-image: url(../images/header-bg.jpg);
+  background-image: url(../images/bg.png);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
 }
 
 .header-top{
-  position: fixed;
+  position: relative;
   z-index: 100;
   width: 100%;
-  background: rgba(63, 20, 86, 0.4);
-  color: #FFF;
+  background: #FFF;
+  color: #333333;
   &__inner{
   display: flex;
   justify-content: space-between;
@@ -44,30 +43,45 @@
       line-height: 22px;
       &:hover{
         padding-bottom: 10px; 
-        border-bottom: 1px solid #A644D9;
+        border-bottom: 3px solid #FD749B;
       }   
     }
     &__item-link{
       @extend %title;
       @extend %montserrat-700;
-      color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333
     }
     &__item-number{
       width: 160px;
-      line-height: 30px;
       font-weight: 900;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
     }
     &__item-number--link{
-      color: #fff;
+      color: #333333;
     }
     &__btn-link{
-      background: linear-gradient(94.36deg, #8C12BC 6.48%, #F148E9 98.5%);
-      box-shadow:(4px 4px 14px rgba(0, 0, 0, 0.25));
+      background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+      border-radius: 100px;
       padding: 10px 28px;
       color: #fff;
-      height: 40px;
+      height: 45px;
       @extend %montserrat-500;
       z-index: 10;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+
+
+text-align: center;
     }
   }
 }
@@ -77,50 +91,54 @@
   &::after{
     content: '';
     position: absolute;
-    background-image: url(../images/header-images.svg);
-    width: 849px;
-    height: 715px;
-    top: 140px;
-    right: 30px;
+    /*  background: url(../images/HEADER.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 957px;
+    height: 638px;
+    left: 621px;*/
     z-index: 0;
   }
   &__wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height:100vh;
   }
   &__title{
-    font-size: 75px;
-    margin-bottom: 30px;
-    z-index: 2;
+    margin-top: 30px;
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 91px;
+    color: #FFF;
   }
   &__subtitle{
-    font-size: 24px;  
+    margin-top: 30px;
+    font-size: 18px;  
     @extend %openSans-400;
     z-index: 2;
-    margin-bottom: 30px;
     font-family: 'Lobster', cursive;
-    text-align: center;
     max-width: 400px;
-    span{
-      color: #FBAF90;
-      font-size: 32px;
-    }
+    font-style: normal;
+    font-weight: normal;
+    line-height: 27px;
+    color: #FFF;
   }
   &__btn{
     @extend %openSans-400;
-    margin-top: 20px;
-    border: none;
-    background-color: transparent;
-    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 700;
+    margin-top: 100px;
+    margin-left: 70px ;
+    background: #FFFFFF;
+    border-radius: 100px;
     cursor: pointer;
     color: #3F1456;
     position: absolute;
-    left: 110px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
   }
   &__timer{
     z-index: 10;
@@ -137,10 +155,12 @@
   }
   &__img{
     position: absolute;
-    top: 50%;
-    right: -90px;
-    transform: translateY(-50%);
+    top: 10%;
+    right: 600px;
+    transform: translateY();
     z-index: -1;
+    width: 500px;
+    height: 500px;
   }
   &__content{
     padding: 71px 0 95px;
@@ -149,15 +169,22 @@
   }
   &__title{
     margin-bottom: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 65px;
   }
   &__text{
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
     @extend %openSans-400;
     margin-bottom: 30px;
   }
   &__text-bold{
+    font-style: normal;
+    font-weight: bold;
     font-size: 22px;
+    line-height: 30px;
     @extend %openSans-700;
   }
   ul.about__list{
