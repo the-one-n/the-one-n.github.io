@@ -1,14 +1,6 @@
 {
-  "name": "concert-hall",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "animate.css": "^4.1.1",
@@ -26,5 +18,9 @@
     "sass": "^1.42.1",
     "slick-carousel": "^1.8.1",
     "twig": "^1.15.4"
+=======
+    "animate.css": "^4.1.1",
+    "slick-carousel": "^1.8.1"
+>>>>>>> 74f2302b5a92f27454d78d2b9b0466d6b0d015cc
   }
 }
