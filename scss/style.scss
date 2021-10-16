@@ -637,8 +637,9 @@ color: #FFFFFF;
   &__bubbles {
     position: absolute;
     top: 25%;
-    left: 20%;
+    margin: auto;
     z-index: -1;
+    max-width: 1250px;
   }
 
   &__bubble {
@@ -662,8 +663,8 @@ color: #FFFFFF;
     border-radius: 15px;
     padding: 17px 49px;
     position: absolute;
-    top: 29rem;
-    left: 57rem;
+    top: 46%;
+    left: 51vw;
 
     &::before {
       position: absolute;
