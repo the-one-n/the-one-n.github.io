@@ -396,6 +396,30 @@ color: #FFFFFF;
   }
 }
 
+.video {
+  position: relative;
+  height: 560px;
+  padding-top: 53px;
+  margin-bottom: 60px;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__block {
+    width: 980px;
+    height: 500px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+}
+
 .paket-tabs__content-item{
   display: none;
   &.paket-tabs__content-item--active{
