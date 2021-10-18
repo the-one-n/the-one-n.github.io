@@ -91,13 +91,14 @@ text-align: center;
   &::after{
     content: '';
     position: absolute;
-    /*  background: url(../images/HEADER.png);
-    background-size: cover;
+    background: url(../images/HEADER.png);
+    background-size: 70%;
     background-repeat: no-repeat; 
     width: 957px;
     height: 638px;
-    left: 621px;*/
+    left: 721px;
     z-index: 0;
+    top: 0px;
   }
   &__wrapper{
     display: flex;
