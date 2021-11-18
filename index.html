@@ -328,11 +328,14 @@
 
     const sliderOptionsDefault = {
         type            : 'loop',
-        autoplay        : false,
+        autoplay        : true,
         pagination      : false,
         pauseOnHover    : true,
         resetProgress   : false,
         autoWidth       : false,
+        start           : 1,
+        lazyLoad        : 'nearby',
+        cover           : true,
     };
 
     const sliders = document.querySelectorAll('.splide');
@@ -348,7 +351,7 @@
                     perMove         : 1,
                     gap             : 42,
                     breakpoints     : {
-                        768: {
+                        576: {
                             perPage: 1,
                         },
                         992: {
