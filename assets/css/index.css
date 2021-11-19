@@ -126,18 +126,7 @@ html {
     flex-direction: column;
   }
 }
-.dropdown-parent__text::after {
-  display: inline-block;
-  content: "";
-  background-image: url("../img/arrow-down.svg");
-  width: 25px;
-  height: 15px;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: 10px;
-  transition: transform 0.5s ease-in-out;
-}
+
 .dropdown-parent--active .dropdown-parent__text::after {
   transform: rotate(180deg);
 }
@@ -171,6 +160,7 @@ html {
 .header__logo {
   width: 100px;
   height: 70px;
+  margin-left:  100px;
 }
 @media screen and (min-width: 992px) {
   .header {
@@ -232,6 +222,7 @@ html {
     width: 20%;
   }
   .header__nav .nav-list__text {
+    margin-top:  10px;
     font-size: 18px;
     text-align: center;
     width: 100%;
@@ -300,12 +291,12 @@ html {
   padding: 40px;
 }
 .footer__bottom {
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   margin-top: 20px;
 }
 .footer .contacts {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .footer .contacts__block {
   margin-bottom: 10px;
@@ -384,7 +375,7 @@ html {
 }
 @media screen and (min-width: 992px) {
   .footer__symbols {
-    border-right: 2px solid #fff;
+    border-right: 1px solid #fff;
     margin-bottom: 10px;
   }
   .footer__symbols .symbols__block {
@@ -586,7 +577,6 @@ html {
 .splide__arrow {
   -ms-flex-align: center;
   align-items: center;
-  background: #ccc;
   border: 0;
   border-radius: 50%;
   cursor: pointer;
@@ -612,6 +602,7 @@ html {
 
 .splide__arrow:hover {
   opacity: 0.9;
+    background: #ccc;
 }
 
 .splide__arrow:focus {
@@ -775,7 +766,7 @@ html {
   padding: 47px 0;
 }
 .affiche .splide {
-  height: 500px;
+  height: 400px;
 }
 
 .ad {
@@ -840,7 +831,7 @@ html {
 }
 @media screen and (min-width: 992px) {
   .banner__slider-title {
-    font-size: 96px;
+    font-size: 66px;
   }
 }
 .banner__slider-subtitle {
@@ -856,7 +847,7 @@ html {
 }
 @media screen and (min-width: 992px) {
   .banner__slider-subtitle {
-    font-size: 48px;
+    font-size: 38px;
   }
 }
 
@@ -888,10 +879,11 @@ html {
   justify-content: end;
   margin-bottom: 20px;
   flex-shrink: 1;
+
 }
 @media screen and (min-width: 768px) {
   .for-visitors__item:not(:last-child) {
-    margin-right: 34px;
+    margin-right: 40px;
   }
 }
 .for-visitors__image {
@@ -950,6 +942,9 @@ html {
 .newsletter__subtitle {
   color: #fff;
   font-family: "Montserrat", sans-serif;
+      font-weight: normal;
+  font-size: 18px;
+
 }
 .newsletter__email {
   color: rgba(0, 0, 0, 0.5);
