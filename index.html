@@ -155,26 +155,40 @@
         <h1 class="section-title for-visitors__title">
             <span class="section-title--normal">ПОСЕТИТЕ</span><span class="section-title--colored">ЛЯМ</span>
         </h1>
-        <div class="for-visitors__body">
-            <div class="for-visitors__item">
-                <img src="assets/img/12-3-NUVO-Magazine-Autumn-2009-028-037_INQUIRING_MINDS_PAGE_07_IMAGE_0004 1.png" alt="" class="for-visitors__image">
-                <h1 class="for-visitors__item-title">Концертные залы</h1>
-            </div>
-            <div class="for-visitors__item">
-                <img src="assets/img/1581349904_50-p-uyutnie-intereri-kafe-91 1.png" alt="" class="for-visitors__image">
-                <h1 class="for-visitors__item-title">Досуг</h1>
-            </div>
-            <div class="for-visitors__item">
-                <img src="assets/img/Du7g69pX0AAMp1l 1.png" alt="" class="for-visitors__image">
-                <h1 class="for-visitors__item-title">Галерея искусств</h1>
-            </div>
-            <div class="for-visitors__item">
-                <img src="assets/img/749da7ebc50fee4feb918df1d35f6fb3--meeting-rooms-management 1.png" alt="" class="for-visitors__image">
-                <h1 class="for-visitors__item-title">Аренда коференц залов</h1>
-            </div>
-            <div class="for-visitors__item">
-                <img src="assets/img/c200main2 1.png" alt="" class="for-visitors__image">
-                <h1 class="for-visitors__item-title">Рекламные возможности</h1>
+        <div class="for-visitors__slider for-visitors__body splide">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="for-visitors__item splide__slide">
+                        <div class="for-visitors__item-body">
+                            <img src="assets/img/12-3-NUVO-Magazine-Autumn-2009-028-037_INQUIRING_MINDS_PAGE_07_IMAGE_0004 1.png" alt="" class="for-visitors__image">
+                            <h1 class="for-visitors__item-title">Концертные залы</h1>
+                        </div>
+                    </div>
+                    <div class="for-visitors__item splide__slide">
+                        <div class="for-visitors__item-body">
+                            <img src="assets/img/1581349904_50-p-uyutnie-intereri-kafe-91 1.png" alt="" class="for-visitors__image">
+                            <h1 class="for-visitors__item-title">Досуг</h1>
+                        </div>
+                    </div>
+                    <div class="for-visitors__item splide__slide">
+                        <div class="for-visitors__item-body">
+                            <img src="assets/img/Du7g69pX0AAMp1l 1.png" alt="" class="for-visitors__image">
+                            <h1 class="for-visitors__item-title">Галерея искусств</h1>
+                        </div>
+                    </div>
+                    <div class="for-visitors__item splide__slide">
+                        <div class="for-visitors__item-body">
+                            <img src="assets/img/749da7ebc50fee4feb918df1d35f6fb3--meeting-rooms-management 1.png" alt="" class="for-visitors__image">
+                            <h1 class="for-visitors__item-title">Аренда коференц залов</h1>
+                        </div>
+                    </div>
+                    <div class="for-visitors__item splide__slide">
+                        <div class="for-visitors__item-body">
+                            <img src="assets/img/c200main2 1.png" alt="" class="for-visitors__image">
+                            <h1 class="for-visitors__item-title">Рекламные возможности</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -324,15 +338,10 @@
 </footer>
 <script src="assets/js/index.min.js"></script>
 <script>
-
-
     const sliderOptionsDefault = {
         type            : 'loop',
         autoplay        : true,
         pagination      : false,
-        pauseOnHover    : true,
-        resetProgress   : false,
-        autoWidth       : false,
         start           : 1,
         lazyLoad        : 'nearby',
         cover           : true,
@@ -369,6 +378,19 @@
                     perPage         : 1,
                     perMove         : 1,
                 };
+                break;
+            case 'for-visitors__slider':
+                sliderOptions = {
+                    ...sliderOptionsDefault,
+                    type: 'slide',
+                    start: 0,
+                    perPage: 4,
+                    perMove: 1,
+                    height: 520,
+                    rewind: false,
+                    rewindSpeed: 0,
+                    arrows: false,
+                }
                 break;
             default:
                 sliderOptions = sliderOptionsDefault;
