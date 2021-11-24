@@ -333,7 +333,8 @@ html {
   flex-wrap: wrap;
 }
 .footer__nav-list {
-  width: 242px;
+  width: 210px;
+  margin-right: 40px;
 }
 .footer__nav-list li > a {
   font-family: "Montserrat", sans-serif;
@@ -346,7 +347,7 @@ html {
 }
 .footer__nav-heading a {
   font-family: "Montserrat-ExtraBold", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff !important;
   margin-bottom: 10px;
 }
@@ -765,6 +766,12 @@ html {
 .splide__arrow:hover::after {
   opacity: 0.9;
 }
+.splide__arrow--next {
+  right: 5em;
+}
+.splide__arrow--prev {
+  left: 5em;
+}
 .splide__track {
   max-height: 100%;
 }
@@ -931,7 +938,7 @@ html {
 
 .newsletter {
   background-color: #2D61E5;
-  padding: 55px 0;
+  padding: 30px 0;
 }
 .newsletter__body {
   display: flex;
