@@ -327,9 +327,11 @@
         type            : 'loop',
         autoplay        : true,
         pagination      : false,
-        start           : 1,
+        start           : 0,
+        flickMaxPages   : 1,
         lazyLoad        : 'nearby',
         cover           : true,
+        drag            : true,
     };
 
     const sliders = document.querySelectorAll('.splide');
@@ -344,15 +346,20 @@
                     perPage         : 4,
                     perMove         : 1,
                     gap             : 42,
+                    height          : 500,
+                    width           : 1800,
+                    cover           : false,
                     breakpoints     : {
                         576: {
-                            perPage: 1,
+                            arrows  : false,
+                            perPage : 1,
                         },
                         992: {
-                            perPage: 2,
+                            arrows  : true,
+                            perPage : 2,
                         },
                         1200: {
-                            perPage: 3,
+                            perPage : 3,
                         }
                     }
                 }
@@ -367,14 +374,13 @@
             case 'for-visitors__slider':
                 sliderOptions = {
                     ...sliderOptionsDefault,
-                    type: 'slide',
-                    start: 0,
-                    perPage: 4,
-                    perMove: 1,
-                    height: 520,
-                    rewind: false,
-                    rewindSpeed: 0,
-                    arrows: false,
+                    type        : 'slide',
+                    autoplay    : false,
+                    height      : 520,
+                    drag        : true,
+                    rewind      : false,
+                    rewindSpeed : 0,
+                    arrows      : false,
                 }
                 break;
             default:

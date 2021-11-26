@@ -171,7 +171,11 @@ html {
 .header__logo {
   width: 100px;
   height: 70px;
-  margin-left: 100px;
+}
+@media screen and (min-width: 992px) {
+  .header__logo {
+    margin-left: 100px;
+  }
 }
 @media screen and (min-width: 992px) {
   .header {
@@ -291,7 +295,7 @@ html {
   bottom: 50%;
   transform: rotate(-45deg);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .header .header__toggle {
     display: none;
   }
@@ -800,8 +804,26 @@ html {
   padding: 47px 0;
 }
 .affiche .splide {
-  height: 400px;
   position: relative;
+}
+.affiche .splide__track {
+  width: 80%;
+}
+.affiche .splide__arrow--next {
+  right: 0;
+}
+.affiche .splide__arrow--prev {
+  left: 0;
+}
+.affiche .splide__slide img {
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+.affiche .splide__slide:hover {
+  cursor: pointer;
+}
+.affiche .splide__slide:hover img {
+  filter: blur(2px);
+  transform: scale(1.1);
 }
 
 .ad {
@@ -834,6 +856,12 @@ html {
 }
 .banner__slider-arrow {
   background: none;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .banner__slider-arrow {
+    display: block;
+  }
 }
 .banner__slider-track {
   height: 100%;
@@ -896,19 +924,18 @@ html {
 .for-visitors__body {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) {
-  .for-visitors__body {
-    flex-direction: row;
-  }
-}
 .for-visitors__item {
-  width: 340px !important;
   perspective: 30px;
+  width: 100% !important;
   transition: transform 0.2s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .for-visitors__item {
+    width: 340px !important;
+  }
 }
 .for-visitors__item-body {
   width: 100%;
