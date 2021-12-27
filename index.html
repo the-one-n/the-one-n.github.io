@@ -11,27 +11,27 @@
 <body>
 
 <header class="header">
-    <img src="assets/img/logo 1.png" alt="" class="header__logo">
+    <a href="index.html"><img src="assets/img/logo 1.png" alt="" class="header__logo"></a>
     <button class="header__toggle"><span></span></button>
     <nav class="header__nav">
         <ul class="nav-list">
             <li class="nav-list__item">
-                <span class="nav-list__text">АФИША</span>
+                <span class="nav-list__text"><a href="affiche.html">АФИША</a></span>
             </li>
             <li class="nav-list__item">
-                <span class="nav-list__text">КОНЦЕРТНЫЙ ЗАЛ</span>
+                <span class="nav-list__text"><a href="banquet_hall.html">КОНЦЕРТНЫЙ ЗАЛ</a></span>
             </li>
             <li class="nav-list__item">
-                <span class="nav-list__text">КОНТАКТЫ</span>
+                <span class="nav-list__text"><a href="contacts.html">КОНТАКТЫ</a></span>
             </li>
             <li class="nav-list__item">
-                <span class="nav-list__text">КАФЕ "ТРИ МУШКЕТЁРА"</span>
+                <span class="nav-list__text"><a href="restaurant.html">КАФЕ "ТРИ МУШКЕТЁРА"</a></span>
             </li>
             <li class="nav-list__item">
-                <span class="nav-list__text">АРЕНДА</span>
+                <span class="nav-list__text"><a href="arenda.html">АРЕНДА</a></span>
             </li>
             <li class="nav-list__item">
-                <span class="nav-list__text">АУДИО-ВИДЕОСТУДИЯ</span>
+                <span class="nav-list__text"><a href="studia.html">АУДИО-ВИДЕОСТУДИЯ</a></span>
             </li>
         </ul>
     </nav>
@@ -376,7 +376,7 @@
                     ...sliderOptionsDefault,
                     type        : 'slide',
                     autoplay    : false,
-                    height      : 520,
+                    height      : 350,
                     drag        : true,
                     rewind      : false,
                     rewindSpeed : 0,
@@ -389,6 +389,26 @@
 
         new Splide('.' + slider.classList[0], sliderOptions).mount();
     })
+</script>
+<script>
+    new Calendar({
+        id: "#color-calendar",
+        theme: "glass",
+    })
+</script>
+<script>
+    const tilt = $('.for-visitors__item-body').tilt({
+        maxTilt:        2,
+        perspective:    100,   // Transform perspective, the lower the more extreme the tilt gets.
+        easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+        scale:          1,      // 2 = 200%, 1.5 = 150%, etc..
+        speed:          3000,    // Speed of the enter/exit transition.
+        transition:     true,   // Set a transition on enter/exit.
+        disableAxis:    null,   // What axis should be disabled. Can be X or Y.
+        reset:          true,   // If the tilt effect has to be reset on exit.
+        glare:          false,  // Enables glare effect
+        maxGlare:       1       // From 0 - 1.
+    });
 </script>
 </body>
 </html>
