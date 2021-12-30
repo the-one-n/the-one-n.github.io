@@ -37,7 +37,6 @@
     </nav>
 </header>
 <main class="concert_hall-page">
-
      <section class="gallery-container">
     <div class="container">
         <div class="gallery-container__title">Концертный зал</div>
@@ -315,6 +314,15 @@
         glare:          false,  // Enables glare effect
         maxGlare:       1       // From 0 - 1.
     });
+</script>
+<script>
+    lightGallery(document.querySelector('.info-gallery'), {
+        plugins: [lgThumbnail, lgZoom],
+        speed: 50,
+    })
+</script>
+<script>
+
 </script>
 </body>
 </html>

@@ -93,7 +93,7 @@
     <section class="affiche">
     <div class="container">
         <h1 class="section-title">
-            <span class="section-title--normal">АФИ</span><span class="section-title--colored">ША</span>
+            <span class="section-title--normal">АФИША</span>
         </h1>
         <div class="affiche__slider splide">
             <div class="splide__arrows">
@@ -137,7 +137,7 @@
     <section class="for-visitors">
     <div class="container">
         <h1 class="section-title for-visitors__title">
-            <span class="section-title--normal">ПОСЕТИТЕ</span><span class="section-title--colored">ЛЯМ</span>
+            <span class="section-title--normal">ПОСЕТИТЕЛЯМ</span>
         </h1>
         <div class="for-visitors__slider for-visitors__body splide">
             <div class="splide__track">
@@ -409,6 +409,15 @@
         glare:          false,  // Enables glare effect
         maxGlare:       1       // From 0 - 1.
     });
+</script>
+<script>
+    lightGallery(document.querySelector('.info-gallery'), {
+        plugins: [lgThumbnail, lgZoom],
+        speed: 50,
+    })
+</script>
+<script>
+
 </script>
 </body>
 </html>
